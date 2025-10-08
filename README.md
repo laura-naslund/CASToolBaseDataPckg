@@ -1,0 +1,45 @@
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# CASToolBaseDataPckg
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of CASToolBaseDataPckg is to serve state boundaries and
+NHDPlusV2 reaches to the CASTool.
+
+## Installation
+
+You can install the development version of CASToolBaseDataPckg from
+[GitHub](https://github.com/) with:
+
+``` r
+# install.packages("pak")
+pak::pak("laura-naslund/CASToolBaseDataPckg")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+``` r
+library(CASToolBaseDataPckg)
+
+## Retrieve state boundary
+de_boundary <- retrieve_boundary("Delaware")
+ggplot2::ggplot(de_boundary)+
+  ggplot2::geom_sf()
+```
+
+<img src="man/figures/README-example-1.png" width="100%" />
+
+``` r
+
+## Retrieve state reaches
+de_reaches <- retrieve_reaches("Delaware")
+ggplot2::ggplot(de_reaches)+
+  ggplot2::geom_sf()
+```
+
+<img src="man/figures/README-example-2.png" width="100%" />
