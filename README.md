@@ -21,7 +21,7 @@ pak::pak("laura-naslund/CASToolBaseDataPckg")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example of how to retrieve state boundaries and reaches.
 
 ``` r
 library(CASToolBaseDataPckg)
