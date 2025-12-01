@@ -43,3 +43,17 @@ ggplot2::ggplot(de_reaches)+
 ```
 
 <img src="man/figures/README-example-2.png" width="100%" />
+
+## Currently available regions
+
+``` r
+data("available_regions")
+
+available_regions
+#>           Region
+#> 1       Delaware
+#> 2       Maryland
+#> 3 North Carolina
+#> 4         Oregon
+#> 5     Washington
+```

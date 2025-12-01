@@ -46,3 +46,11 @@ de_reaches <- retrieve_reaches("Delaware")
 ggplot2::ggplot(de_reaches)+
   ggplot2::geom_sf()
 ```
+
+## Currently available regions
+```{r}
+data("available_regions")
+
+available_regions
+```
+
